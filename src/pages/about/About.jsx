@@ -38,7 +38,7 @@ function AboutMe() {
             future generations.{" "}
           </p>
         </div>
-        <img style={{maxWidth:'100%'}} src="https://cdn.discordapp.com/attachments/873106179151257620/1042326408954920980/unknown.png" height={'70%'}></img>
+        <img style={{maxWidth:'100%'}} alt='ok' src="https://cdn.discordapp.com/attachments/873106179151257620/1042326408954920980/unknown.png" height={'70%'}></img>
       </div>
     </div>
   );
