@@ -46,7 +46,7 @@
     width: 80%;
 }
 
-.social-icons-about-me  {
+.social-icons-about-me {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -54,6 +54,36 @@
     grid-gap: 50px;
 }
 
-.contentLanding, .social{
+.contentLanding, .social {
     margin-left: 90px;
+}
+
+@media screen and (max-width:808px) {
+    .landingContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .leftLanding, .rightLanding, .contentLanding {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contentLanding {
+        margin-left: 0;
+    }
+
+    .contentLanding h1 {
+        font-size: 48px;
+        width: fit-content;
+    }
+
+    .social {
+        margin-left: 0;
+        grid-gap: 10px;
+    }
 }
