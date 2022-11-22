@@ -21,22 +21,22 @@ function NavigationBar() {
 
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link
-                            to='/store' className='nav-links' onClick={() => { closeMobileMenu() }}>
+                        <a
+                            href='/#aboutme' className='nav-links' onClick={() => { closeMobileMenu() }}>
                             About Us
-                        </Link>
+                        </a>
                     </li >
 
                     <li className='nav-item'>
                         <Link
-                            to='/community' className='nav-links' onClick={closeMobileMenu}>
+                            to='/team' className='nav-links' onClick={closeMobileMenu}>
                             Our Team
                         </Link>
                     </li>
 
                     <li className='nav-item'>
                         <Link
-                            to='/support' className='nav-links' onClick={closeMobileMenu}>
+                            to='/activities' className='nav-links' onClick={closeMobileMenu}>
                             Blog/Activities
                         </Link>
                     </li>
