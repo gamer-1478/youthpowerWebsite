@@ -185,13 +185,13 @@ export const images = [
     },
 ];
 
-// // get all photos from images1 folder
-// const images1 = require.context("./images1", true, /\.(png|jpe?g|svg)$/);
-// const images1Keys = images1.keys();
-// const images1Values = images1Keys.map(images1);
-// export const images1Array = images1Keys.map((key, index) => ({
-//     src: images1Values[index],
-//     original: images1Values[index],
-//     width: 320,
-//     height: 213
-// }));
+//get all photos from https://yp-website-api.herokuapp.com/
+
+export const Photos = async () => { 
+    return await fetch("https://yp-website-api.herokuapp.com/images")
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+        return data;
+    });
+}
