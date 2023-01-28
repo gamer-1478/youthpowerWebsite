@@ -21,11 +21,13 @@ function Landing() {
     if (newWindow) newWindow.opener = null;
   };
 
-  const instagram = "https://www.instagram.com/aayushgarg.official";
-  const Facebook = "https://www.facebook.com/aayush.garg.official/";
+  const instagram = "https://www.instagram.com/samanvay.aisg46";
+  const spotify = "https://open.spotify.com/show/0JfZPmqz4kDzbk30KDbCRb";
   const mail =
-    "mailto:contact@aayushgarg.net?subject=Hi%20There,%20Wanted%20To%20Contact%20You&body=Message%20Goes%20Here";
+    "mailto:samanvay.aisg46@outlook.com?subject=Hi%20There,%20Wanted%20To%20Contact%20You&body=Message%20Goes%20Here";
 
+  const apple = "https://podcasts.apple.com/us/podcast/samanvay-decoded/id1661908398";
+  
   return (
     <>
       <div className="landingContainer">
@@ -41,15 +43,24 @@ function Landing() {
           <div className="social">
             <div className="social-icons-about-me">
               <p
-                className="social-icon-link-about facebook"
+                className="social-icon-link-about spotify"
                 onClick={() => {
-                  openInNewTab(Facebook);
+                  openInNewTab(spotify);
                 }}
-                aria-label="Facebook"
+                aria-label="Spotify"
               >
-                <script></script>
-                <i className={"fab fa-facebook-f" + socialSizeFa} />
+              <i className={"fab fa-spotify" + socialSizeFa} />
               </p>
+              <p
+                className="social-icon-link-about apple"
+                onClick={() => {
+                  openInNewTab(apple);
+                }}
+                aria-label="apple"
+              >
+                <i className={"fab fa-apple" + socialSizeFa} />
+              </p>
+
               <p
                 className="social-icon-link-about instagram"
                 onClick={() => {

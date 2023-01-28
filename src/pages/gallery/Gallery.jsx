@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Gallery.css";
-import { images, Photos } from "./images";
+import { Photos } from "./images";
 
 import { Gallery } from "react-grid-gallery";
 import Lightbox from "yet-another-react-lightbox";

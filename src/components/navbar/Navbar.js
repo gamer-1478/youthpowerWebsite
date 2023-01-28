@@ -4,7 +4,6 @@ import './Navbar.css'
 
 function NavigationBar() {
     const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
@@ -39,16 +38,9 @@ function NavigationBar() {
                             Gallery
                         </Link>
                     </li>
-
-                    <li className='nav-item'>
-                        <Link
-                            to='/activities' className='nav-links' onClick={closeMobileMenu}>
-                            Blog/Activities
-                        </Link>
-                    </li>
                 </ul>
                 <div className='button-show-mobile'>
-                    <button className='btn--primary--black' offset='80' onClick={() => rederto('/login')}>Conact Us</button>
+                    <button className='btn--primary--black' offset='80' onClick={() => rederto('/login')}>Contact Us</button>
                 </div>
             </div>
         </nav>
